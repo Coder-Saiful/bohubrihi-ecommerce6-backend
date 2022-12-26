@@ -19,7 +19,7 @@ module.exports.signUp = async (req, res) => {
         }
 
         let user = await User.findOne({ email: req.body.email });
-        if (user) return res.status(400).send({ message: "User already registered!" });
+        if (user) return res.status(400).send({ message: "You are already registered!" });
 
         user = new User(_.pick(req.body, ["name", "email", "password"]));
 
@@ -30,7 +30,7 @@ module.exports.signUp = async (req, res) => {
         const result = await user.save();
 
         return res.status(201).send({
-            message: "Registration Successfully!",
+            message: "Registration Successfully! Please login.",
             token: token,
             data: _.pick(result, ["_id", "name", "email"])
         });
