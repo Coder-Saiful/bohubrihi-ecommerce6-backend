@@ -55,6 +55,6 @@ module.exports.signIn = async (req, res) => {
             data: _.pick(user, ["_id", "name", "email"])
         });
     } catch (error) {
-        return res.status(400).send({message: "Login failed! Please try again."});
+        return res.status(400).send({loginErr: "Login failed! Please try again."});
     }
 }
