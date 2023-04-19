@@ -25,6 +25,7 @@ module.exports.setProfile = async (req, res) => {
             return res.status(201).send({message: "Your profile info saved successfully!"});
         }
     } catch (error) {
+        console.log(error);
         return res.status(400).send({message: "An error occured."});
     }
 }
