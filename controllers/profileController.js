@@ -1,4 +1,4 @@
-const {Profile} = require('../models/cart');
+const {Profile} = require('../models/profile');
 const _ = require('lodash');
 
 module.exports.getProfile = async (req, res) => {
