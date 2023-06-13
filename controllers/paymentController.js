@@ -121,17 +121,17 @@ module.exports.ipn = async (req, res) => {
     return res.status(201).send(req.body);
 }
 
-// payment success
-module.exports.paymentSuccess = async (req, res) => {
-    res.redirect('http://localhost:3000/payment/success');
-}
+// // payment success
+// module.exports.paymentSuccess = async (req, res) => {
+//     res.redirect('http://localhost:3000/payment/success');
+// }
 
-// payment cancel
-module.exports.paymentCancel = async (req, res) => {
-    res.redirect('http://localhost:3000/payment/cancel');
-}
+// // payment cancel
+// module.exports.paymentCancel = async (req, res) => {
+//     res.redirect('http://localhost:3000/payment/cancel');
+// }
 
-// payment success
-module.exports.paymentFail = async (req, res) => {
-    res.redirect('http://localhost:3000/payment/fail');
-}
+// // payment success
+// module.exports.paymentFail = async (req, res) => {
+//     res.redirect('http://localhost:3000/payment/fail');
+// }
