@@ -7,10 +7,10 @@ router.route('/')
 
 router.post('/ipn');
 
-// router.post('/success', paymentSuccess);
+router.post('/success', paymentSuccess);
 
-// router.post('/cancel', paymentCancel);
+router.post('/cancel', paymentCancel);
 
-// router.post('/fail', paymentFail);
+router.post('/fail', paymentFail);
 
 module.exports = router;
